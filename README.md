@@ -12,6 +12,7 @@
 ## start the app
 
    --  npm run dev <br> <br> 
-![image](https://github.com/user-attachments/assets/a873d80a-a1d9-47dd-b534-7772b4ba2339)
+![image](https://github.com/user-attachments/assets/01eb8a2c-7def-4e7f-861d-9b5c459fa718)
+
 
 
