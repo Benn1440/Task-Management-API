@@ -1,9 +1,10 @@
 require("dotenv").config();
 const express = require('express');
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.port || 4000;
 const databaseConnection = require('./Database/tsmdb');
 const taskRoute = require('./Routes/task-route');
+// const Tasks = require('../models/task');
 
 //make connection to DataBase
 databaseConnection();

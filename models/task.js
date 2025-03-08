@@ -29,7 +29,7 @@ const taskSchema = new mongoose.Schema({
         default: 'Pending',
         required: [true, 'Kindly specify between Pending or Completed'],
     },
-    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+    // user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     createdAt: {type: Date,  default: Date.now }
 });
 

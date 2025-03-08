@@ -1,13 +1,22 @@
-const Task = require('../models/task');
+const Tasks = require('../models/task');
+// const Task = require('../models/task');
 
 
 // Create a new Tasks
 const createTask = async (req, res) => {
-  const { title, description, dueDate, priority, status } = req.body;
+  // const { title, description, dueDate, priority, status } = req.body;
   try {
-    const task = new Task({ title, description, dueDate, priority, status, user: req.userId });
-    await task.save();
-    res.status(201).json(task);
+    // const task = new Task({ title, description, dueDate, priority, status, user: req.userId });
+    const task = req.body;
+    const recentTask = await Tasks.create(task);
+    if(task){
+      res.status(201).json({
+        suceess : true,
+        message: 'New task created!',
+        data : recentTask,
+      });
+    }
+    // await task.save(); 
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
