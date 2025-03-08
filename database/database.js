@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const databaseConnection = async () => {
     try {
         await mongoose.connect(
-            "mongodb+srv://benokafor67:70YjcrUgyAFZBNqH@cluster0.uqlkm.mongodb.net/"
+            "mongodb+srv://benokafor67:@cluster0.uqlkm.mongodb.net/"
         );
         console.log('Database connection started successfully');
     } catch (err) {
