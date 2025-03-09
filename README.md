@@ -18,5 +18,7 @@
 
 ![image](https://github.com/user-attachments/assets/04978be9-17d7-46ac-914e-1414b4389557)
 
+## Postman API documentation <br><br>
 
+https://documenter.getpostman.com/view/20644031/2sAYdoFT8e
 
